@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<script name="Javascript">
+tit="...::::::::::a collection of spectators::::::::::::::::::::::::::::::::::::"
+document.title=tit
+
+picture1 = new Image;
+picture1.src = "images/guestbook4.jpg";
+picture2 = new Image;
+picture2.src = "images/guestbook5.jpg";
+picture3 = new Image;
+picture3.src = "images/guestbook6.jpg";
+</script>
+</head>
+<body background="images/moneyback2.jpg" topmargin=25 bottommargin=0 leftmargin=0 rightmargin=0>
+
+<map name="DaMour">
+  <area shape=rect coords="15,8,103,41" onMouseOver="document.thing.src = picture1.src;document.title='...:::::::::::::join the collection:::::::::::::::'" onMouseout="document.thing.src ='images/guestbook3.jpg';document.title=tit" href="http://titan.guestworld.com/wgb/wgbsign.dbm?owner=damournet_2" target="guest" alt="Sign My Guestbook">
+  <area shape=rect coords="106,9,194,40"  onMouseOver="document.thing.src = picture2.src" onMouseout="document.thing.src ='images/guestbook3.jpg'" alt="Get a Guestbook" href="http://htmlgear.lycos.com/specs/book.html" target="guest">
+  <area shape=rect coords="202,7,290,41" onMouseOver="document.thing.src = picture3.src;document.title='...::::::::::::view the collection::::::::::::::::'" onMouseout="document.thing.src ='images/guestbook3.jpg';document.title=tit" href="http://titan.guestworld.com/wgb/wgbview.dbm?owner=damournet_2" target="guest" alt="View My guestbook">
+</map>
+
+<center><img name="thing" src="images/guestbook3.jpg" usemap="#DaMour" border=0></center>
+
+
+</body>
+</html>

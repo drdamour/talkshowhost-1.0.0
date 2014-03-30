@@ -1,0 +1,62 @@
+<html>
+
+
+<script>
+
+first= "<table border=0 width=55%><tr><td><p>      Once Upon a time there was a Lovely red-headed girl named Leslie Jones.  She was very beautiful after her ugly middle school years, and waiting for a big stong guy to take her in.</td><td><img src='raggedy.jpg'></td></tr>"
+
+second= "<tr><td colspan=2>Along came such a boy in teh form of a basketball player.  Looking for the most beautiful girl in the world, he realized Milla was too old for him, so he went to #2, Miss Leslie Jones.</td></tr>"
+
+third= "<tr><td><img src='faces.jpg'></td><td>	Leslie Had a little problem though, she was insanely moody all the time.  She would go from happy to sad very quickly and the boy had to work hard to make her happy as much as he could.  When she was happy, he was happier.</td></tr>"
+
+fourth="</tr><td><img src='present.jpg'></td><td>So he was forced to buy her many many presents to make her happy.  He bought her everything he could afford that she displayed any interest in.  He loved buying her simple things and seeing the beautiful smile on her face.  But, one day she wanted somehting that he didn't know if he could give her.</td></tr>"
+
+function stories() {
+
+password=prompt('What is the password',"Enter Password Here")
+
+
+if (password == null) {
+	alert("Don't want to hear the story........fine")
+	thestory='No you lose go <a href="http://talkshowhost.net/OldWeb/">HERE</a>'
+	}
+else if (password == "girl") {
+	thestory=first
+	}
+else if (password == "boy") {
+	thestory= first+"  "+second
+	}
+else if (password == "faces") {
+	thestory=first+"  "+second+"  "+third
+	}
+else if (password == "present") {
+	thestory=first+"  "+second+"  "+third+fourth
+	}
+else {
+
+	alert('Please Enter a new Password, the one you entered was wrong.  Tip:Be general ragady anne=girl, andy=boy, etc...')
+
+	stories()
+
+	}
+
+document.write("<center>"+thestory+"</table></center>")
+
+}
+
+
+
+stories()
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</html>

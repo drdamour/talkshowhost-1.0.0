@@ -1,0 +1,325 @@
+<HTML>
+<HEAD>
+<TITLE>game</TITLE>
+<html>
+<head>
+
+<script language="javascript">
+var work1='true';
+var work2='true';
+var work3='true';
+var work4='true';
+var work5='true';
+var work6='true';
+difficultylevel = 0
+sl = 0
+sw = 0
+</script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table celpadding=0 cellspacing=0 width=30% height=40%>
+<tr>
+ <td id='a1' bgColor=navy onclick="work6='false';if(work1=='true')document.all.a6.bgColor='white'">&nbsp</td>
+ <td id='a2' bgColor=red onclick="work3='false';if(work2=='true')document.all.a3.bgColor='white'">&nbsp</td> 
+ <td id='a3' bgColor='aqua' onclick="work5='false';if(work3=='true')document.all.a5.bgColor='white'">&nbsp</td>
+</tr>
+
+<tr>
+ <td id='a4' bgColor=yellow onclick="work6='false';if(work4=='true')document.all.a6.bgColor='white';checkwin()">&nbsp</td>
+ <td id='a5' bgColor=blue onclick="work1='false';if(work5=='true')document.all.a1.bgColor='white'">&nbsp</td> 
+ <td id='a6' bgColor=green onclick="work2='false';if(work6=='true')document.all.a2.bgColor='white'">&nbsp</td>
+
+</tr>
+</table>
+
+<BR>
+<script>
+function checkwin() {
+if ((work1=='false') && (work2=='false') && (work3=='false') && (work4=='true') && (work5=='false') && (work6=='false')){
+alert('You Won!')
+sw = sw + 1
+document.squaregame.wins.value = sw
+}
+}
+
+</script>
+<script>
+
+
+function restart(lossesforthisgame) {
+
+sl = sl + lossesforthisgame
+document.squaregame.loss.value = sl
+
+if (difficultylevel == 0) {
+document.all.a1.bgColor="navy"
+document.all.a2.bgColor="red"
+document.all.a3.bgColor="aqua"
+document.all.a4.bgColor="yellow"
+document.all.a5.bgColor="blue"
+document.all.a6.bgColor="green"
+}
+else {
+
+var num1 = (Math.round(6 * Math.random()) + 1);
+var num2 = (Math.round(6 * Math.random()) + 1);
+var num3 = (Math.round(6 * Math.random()) + 1);
+var num4 = (Math.round(6 * Math.random()) + 1);
+var num5 = (Math.round(6 * Math.random()) + 1);
+var num6 = (Math.round(6 * Math.random()) + 1);
+
+
+function equalchecker() {
+
+if (num1 > 6) {
+    num1= num1 - 1
+     }
+if (num2 > 6) {
+    num2= num2 - 1
+    }
+if (num3 > 6) {
+    num3= num3 - 1
+    }
+if (num4 > 6) {
+    num4 = num4 - 1
+    }
+if (num5 > 6) {
+    num5= num5 - 1
+    }
+if (num6 > 6) {
+    num6= num6 - 1
+    }
+
+if (num1 == num2) {
+   num1 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+    }  
+else if (num1 == num3) {
+   num1 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+    }  
+else if (num1 == num4) {
+   num1 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+    }  
+else if (num1 == num5) {
+   num1 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+    }  
+else if (num1 == num6) {
+   num1 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+    }  
+else {
+   num1 = num1;
+   }
+if (num2 == num3) {
+   num2 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+   }
+else if (num2 == num4) {
+   num2 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+   }
+else if (num2 == num5) {
+   num2 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+   }
+else if (num2 == num6) {
+   num2 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+   }
+else {
+ num2 = num2;
+   }
+if (num3 == num4) {
+   num3 = (Math.round(6 * Math.random()) + 1);
+   equalchecker() 
+   }
+else if (num3 == num5) {
+   num3 = (Math.round(6 * Math.random()) + 1);
+   equalchecker() 
+   }
+else if (num3 == num6) {
+   num3 = (Math.round(6 * Math.random()) + 1);
+   equalchecker() 
+   }
+else {
+   num3 = num3;
+   }
+if (num4 == num5) {
+   num4 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+   }
+else if (num4 == num6) {
+   num4 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+   }
+else {
+num4 = num4;
+   }
+if (num5 == num6){
+   num5 = (Math.round(6 * Math.random()) + 1);
+   equalchecker()
+   }
+else {
+   num5 = num5;
+   } 
+
+num6 = num6;
+
+
+}
+
+
+equalchecker()
+
+
+if (num1 == 1) {
+   document.all.a1.bgColor="navy"
+   }
+else if (num1 == 2) {
+   document.all.a1.bgColor="red"
+   }
+else if (num1 == 3) {
+   document.all.a1.bgColor="aqua"
+   }
+else if (num1 == 4) {
+   document.all.a1.bgColor="yellow"
+   }
+else if (num1 == 5) {
+document.all.a1.bgColor="blue"
+   }
+else {
+document.all.a1.bgColor="green"
+}
+
+if (num2 == 1) {
+   document.all.a2.bgColor="navy"
+   }
+else if (num2 == 2) {
+document.all.a2.bgColor="red"
+   }
+else if (num2 == 3) {
+document.all.a2.bgColor="aqua"
+   }
+else if (num2 == 4) {
+document.all.a2.bgColor="yellow"
+   }
+else if (num2 == 5) {
+document.all.a2.bgColor="blue"
+   }
+else {
+document.all.a2.bgColor="green"
+}
+
+if (num3 == 1) {
+   document.all.a3.bgColor="navy"
+   }
+else if (num3 == 2) {
+document.all.a3.bgColor="red"
+   }
+else if (num3 == 3) {
+document.all.a3.bgColor="aqua"
+   }
+else if (num3 == 4) {
+document.all.a3.bgColor="yellow"
+   }
+else if (num3 == 5) {
+document.all.a3.bgColor="blue"
+   }
+else {
+document.all.a3.bgColor="green"
+}
+
+if (num4 == 1) {
+   document.all.a4.bgColor="navy"
+   }
+else if (num4 == 2) {
+document.all.a4.bgColor="red"
+   }
+else if (num4 == 3) {
+document.all.a4.bgColor="aqua"
+   }
+else if (num4 == 4) {
+document.all.a4.bgColor="yellow"
+   }
+else if (num4 == 5) {
+document.all.a4.bgColor="blue"
+   }
+else {
+document.all.a4.bgColor="green"
+}
+if (num5 == 1) {
+   document.all.a5.bgColor="navy"
+   }
+else if (num5 == 2) {
+document.all.a5.bgColor="red"
+   }
+else if (num5 == 3) {
+document.all.a5.bgColor="aqua"
+   }
+else if (num5 == 4) {
+document.all.a5.bgColor="yellow"
+   }
+else if (num5 == 5) {
+document.all.a5.bgColor="blue"
+   }
+else {
+document.all.a5.bgColor="green"
+}
+if (num6 == 1) {
+   document.all.a6.bgColor="navy"
+   }
+else if (num6 == 2) {
+document.all.a6.bgColor="red"
+   }
+else if (num6 == 3) {
+document.all.a6.bgColor="aqua"
+   }
+else if (num6 == 4) {
+document.all.a6.bgColor="yellow"
+   }
+else if (num6 == 5) {
+document.all.a6.bgColor="blue"
+   }
+else {
+document.all.a6.bgColor="green"
+}
+alert(num1 +" "+ num2 +" "+ num3 +" "+ num4 +" "+ num5 +" "+ num6)
+
+ }
+work1='true'
+work2='true'
+work3='true'
+work4='true'
+work5='true'
+work6='true'
+}
+
+
+
+</script>
+
+<form name="squaregame">
+<input type="button" onClick="restart(1)" value="reset">
+<select name="difficulty" size="1" onChange="difficultylevel=this.form.difficulty.options[this.form.difficulty.selectedIndex].value;restart(0)">
+<option value="0">Easy
+<option value="1">Hard
+<input type="text" size=3 name=wins>
+<input type="text" size=3 name=loss>
+</form>
+</select>
+<script>
+document.squaregame.wins.value = sw
+document.squaregame.loss.value = sl
+</script>
+</body>
+</html>  
+</html>

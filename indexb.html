@@ -1,0 +1,296 @@
+<html>
+<head>
+<title>
+"And on the second page everything DaMour saw was grey"
+</title>
+
+<link rel="STYLESHEET" href="formb.css" type="text/css">
+
+<script>
+
+b4f = new Image;b4f.src = "images/giftsb.gif"
+b4f = new Image;b4f.src = "images/giftsc.gif"
+b4f = new Image;b4f.src = "images/gbc.gif"
+b4f = new Image;b4f.src = "images/gb.gif"
+b4f = new Image;b4f.src = "images/red.jpg"
+b4f = new Image;b4f.src = "images/cam3bw.jpg"
+b5f = new Image;b5f.src = "images/cam3c.jpg"
+b6f = new Image;b6f.src = "images/cam1c.jpg"
+b7f = new Image;b7f.src = "images/cam1bw.jpg"
+b8f = new Image;b8f.src = "images/cam2c.jpg"
+b9f = new Image;b9f.src = "images/cam2bw.jpg"
+b10f = new Image;b10f.src = "images/asukacollage.jpg"
+b11f = new Image;b11f.src = "images/asukacollagebw.jpg"
+b12f = new Image;b12f.src = "images/black.jpg"
+b13f = new Image;b13f.src = "images/asukapl.jpg"
+b14f = new Image;b14f.src = "images/asukaplc.jpg"
+
+
+function webc(){
+color=1
+
+//Main document
+document.body.background='images/asukacollage.jpg'
+document.title='"And on the second page everything DaMour saw was in color"'
+document.frames.pl.document.body.background='images/asukaplc.jpg'
+//NEED TO CHANGE SCROLLBAR (for low res modes), and on playlist
+
+//iframe
+document.frames.news.document.body.background='images/asukacollage.jpg'
+//NEED TO CHANGE SCROLLBAR
+
+//pictures
+//picture1.src='images/cam1c.jpg'
+//picture2.src='images/cam2c.jpg'
+//picture3.src='images/cam3c.jpg'
+
+
+
+//menu
+gbgif.src='images/gbc.gif'
+giftsgif.src='images/giftsc.gif'
+
+//current
+document.all.thcurrentfont.color='#fff000'
+document.all.tracurrent.style.background='#fff000'
+document.all.tra1font.color='#000fff'
+document.all.tra2font.color='#000fff'
+document.all.trbcurrent.style.background='#000fff'
+document.all.trccurrent.style.background='#fff000'
+document.all.thcurrent.style.background='#000fff'
+}
+
+
+function webb() {
+color=0
+
+
+//main document
+document.body.background='images/asukacollagebw.jpg'
+document.title='"And on the second page everything DaMour saw was grey"'
+
+//iframe
+document.frames.news.document.body.background='images/asukacollagebw.jpg'
+document.frames.pl.document.body.background='images/asukapl.jpg'
+
+//pictures
+//picture1.src='images/cam1bw.jpg'
+//picture2.src='images/cam2bw.jpg'
+//picture3.src='images/cam3bw.jpg'
+
+//menu
+gbgif.src='images/gb.gif'
+giftsgif.src='images/giftsb.gif'
+
+//current
+document.all.thcurrentfont.color='#ffffff'
+document.all.tracurrent.style.background='#404040'
+document.all.tra1font.color='#C0C0C0'
+document.all.tra2font.color='#C0C0C0'
+document.all.trbcurrent.style.background='#202020'
+document.all.trccurrent.style.background='#202020'
+document.all.thcurrent.style.background='#C0C0C0'
+}
+
+startz = 4
+color=0
+
+
+
+function bh(num) {
+
+document.body.style.cursor='pointer'
+if (num==7){
+document.all.gb.style.visibility='visible'
+}
+if (num==8){
+document.all.gifts.style.visibility='visible'
+}
+
+}
+
+function bs(num) {
+document.body.style.cursor='auto'
+if (num==7){
+document.all.gb.style.visibility='hidden'
+}
+if (num==8){
+document.all.gifts.style.visibility='hidden'
+}
+
+}
+
+</script>
+
+<script src="links.js"></script>
+<script src="currents.js"></script>
+<script src="newwindow.js"></script>
+
+</head>
+
+
+<body background="images/asukacollagebw.jpg" topmargin="0" leftmargin="0" rightmargin="0" bottommargine="0">
+
+<div name="newsdiv" id="newsdiv" style="position:absolute; z-index:2; left: 336px; top:168 px">
+<iframe id="news" border=0 frameborder=0 width="336" height="252" src="http://35.11.9.52/news/news.cgi" onmouseover="if (color==0) {document.frames.news.document.body.background='images/black.jpg'};if (color==1) {document.frames.news.document.body.background='images/red.jpg'}" onmouseout="if (color==0) {document.frames.news.document.body.background='images/asukacollagebw.jpg'};if (color==1) {document.frames.news.document.body.background='images/asukacollage.jpg'}"></iframe>
+</div>
+
+
+<script>
+if (screen.width > 1023) {
+document.body.scroll="no"
+}
+</script>
+
+<div id="pi" style="position:absolute; z-index:10; left: 0px; top:0 px">
+<img src="images/314side.gif">
+</div>
+
+
+
+<div id="bw" style="position:absolute; z-index:10; left: 875px; top:0 px" onmouseover="webb()">
+<table><tr><td bgcolor="black">
+<font color=#C0C0C0>G</font>
+<font color=#B8B6B6>R</font>
+<font color=#969494>E</font>
+<font color=#808080>Y</font>
+</td></tr>
+</table>
+</div>
+
+
+<div id="color" style="position:absolute; z-index:10; left: 935px; top:0 px" onmouseover="webc()">
+<table><tr><td bgcolor="black">
+<font color=red>C</font>
+<font color=yellow>O</font>
+<font color=blue>L</font>
+<font color=green>O</font>
+<font color=purple>R</font>
+</td></tr>
+</table>
+</div>
+
+
+<div id="pldiv" style="position:absolute; z-index:2; left: 847px; top:55px" onmouseover="this.style.zIndex=startz;startz = startz + 1">
+<iframe id="pl" border=0 frameborder=0 width="160" height="150" src="plb.html"></iframe>
+</div>
+
+<div id="desktop" style="position:absolute; z-index:3; left: 812px; top:70px" onmouseover="this.style.zIndex=startz;startz = startz + 1">
+<a href="images/desktopgl.jpg"><img src="images/desktopgs.jpg" alt="My current desktop" border=0></a>
+</div>
+
+<div id="currents" style="position:absolute; z-index:4; left: 812px; top:60px" onmouseover="this.style.zIndex=startz;startz = startz + 1">
+<table width="160" cellspacing=2 cellpadding=2 id="tcurrent">
+<th COLSPAN=3 id="thcurrent" bgcolor=#C0C0C0><center><font id="thcurrentfont" size=+2 face="Century Gothic" color=#ffffff>current</font></center></th>
+<tr id="tracurrent" bgcolor=#404040>
+<td>
+<center><font id="tra1font" color="#C0C0C0">open book</FONT></center>
+</td>
+<td>
+<center><font id="tra2font" color="#C0C0C0">fav. song</FONT></center>
+</td>
+</tr>
+
+<tr id="trbcurrent" bgcolor="#202020">
+<td>
+<script>
+document.write("<center><a href='"+blink+"' target='books'>here</a></center>")
+</script>
+</td>
+<td>
+<script>
+document.write("<marquee scrolldelay=110 scrollamount=2><a href='"+slink+"'>The Beatles - While My Guitar Gently Weeps</a></marquee>")
+</script>
+</td>
+</tr>
+
+<tr id="trccurrent" bgcolor="#202020">
+<td>
+<script>
+document.write("<center><a href='"+b2link+"' target='books'>here</a></center>")
+</script>
+</td>
+<td id="tmood" bgcolor="#404040">
+<font id="fmood" color="#C0C0C0"><center>mood</center></font>
+</td>
+</tr>
+
+<tr id="trdcurrent" bgcolor="#202020">
+<td>
+<script>
+document.write("<center><a href='"+b3link+"' target='books'>here</a></center>")
+</script>
+</td>
+<td>
+<img src="http://www.imood.com/query.cgi?email=damour@pilot.msu.edu&type=1" alt="You know IT!">
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div id="ba" style="position:absolute; left: 22px; top: 90px; z-index:2" onmouseover="bh(1)" onmouseout="bs(1)">
+<img src="images/3w.gif">
+</div>
+
+
+<div id="bb" style="position:absolute; left: 22px; top: 130px; z-index:2" onmouseover="bh(2)" onmouseout="bs(2)">
+<img src="images/pw.gif">
+</div>
+
+<div id="bc" style="position:absolute; left: 22px; top: 170px; z-index:2" onmouseover="bh(3)" onmouseout="bs(3)">
+<img src="images/1b.gif">
+</div>
+
+<div id="bd" style="position:absolute; left: 22px; top: 210px; z-index:2" onmouseover="bh(4)" onmouseout="bs(4)">
+<img src="images/4b.gif">
+</div>
+
+<div id="be" style="position:absolute; left: 22px; top: 250px; z-index:2" onmouseover="bh(5)" onmouseout="bs(5)">
+<img src="images/1b.gif">
+</div>
+
+<div id="bf" style="position:absolute; left: 22px; top: 290px; z-index:2" onmouseover="bh(6)" onmouseout="bs(6)">
+<img src="images/5b.gif">
+</div>
+
+<div id="bg" style="position:absolute; left: 22px; top: 330px; z-index:2" onmouseover="bh(7)" onmouseout="bs(7)" onclick="mw('hgb.html','gb',360,75,1,0,0,0)">
+<img src="images/9b.gif" alt="GuestBook">
+</div>
+
+<div id="gb" style="position:absolute; left: 76px; top: 325px; z-index:1; visibility:hidden" onmouseover="bh(7)" onmouseout="bs(7)" onclick="mw('gb.html','gb',360,75,1,0,0,0)">
+<img name="gbgif" src="images/gb.gif">
+</div>
+
+<div id="bh" style="position:absolute; left: 22px; top: 370px; z-index:2" onmouseover="bh(8)" onmouseout="bs(8)" onclick="mw('giftb.html','gifts',530,345,1,0,0,0)">
+<img src="images/2b.gif" alt="Gifts">
+</div>
+
+<div id="gifts" style="position:absolute; left: 76px; top: 363px; z-index:1; visibility:hidden" onmouseover="bh(8)" onmouseout="bs(8)" onclick="mw('giftb.html','gifts',530,345,1,0,0,0)">
+<img name="giftsgif" src="images/giftsb.gif">
+</div>
+
+<div id="bi" style="position:absolute; left: 22px; top: 410px; z-index:2" onmouseover="bh(9)" onmouseout="bs(9)" onclick="mw('linksb.html','links',730,445,1,0,0,1)">
+<img src="images/6w.gif" alt="Links">
+</div>
+
+<div id="bj" style="position:absolute; left: 22px; top: 450px; z-index:2" onmouseover="bh(10)" onmouseout="bs(10)" onclick="window.open('games.html', 'games')">
+<img src="images/5w.gif" alt="Games">
+</div>
+
+<div id="bk" style="position:absolute; left: 22px; top: 490px; z-index:2" onmouseover="bh(11)" onmouseout="bs(11)">
+<img src="images/3b.gif">
+</div>
+
+<div id="bl" style="position:absolute; left: 22px; top: 530px; z-index:2" onmouseover="bh(12)" onmouseout="bs(12)">
+<img src="images/5b.gif">
+</div>
+
+
+
+
+</body>
+
+
+<html>

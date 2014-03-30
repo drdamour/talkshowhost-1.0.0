@@ -1,0 +1,230 @@
+<HTML>
+<HEAD>
+<TITLE>game</TITLE>
+<meta name="author" content="DaMour, Chris">
+<meta name="generator" content="Word pad, no sissy composer or frontpage here!">
+
+<script src="exit.js">
+</script>
+
+
+
+</head><BODY background="images/redweb.gif" onload="start()">
+
+<SCRIPT src="numguess.js">
+document.first.wins.value = gw
+document.first.loss.value = gl
+</script>
+
+<center><img src="images/games.gif" alt="Game Page"></center>
+<form name=first>
+<input type="Button" name="firstgame" Value="Play Number Guessing Game" onClick="guess()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="yellow" size=+1><input type="text" size=3 name="wins">Wins&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" size=3 name="loss">Losses</font)<br>
+</form>
+
+<BR>
+<BR>
+<BR>
+
+<script src="lotogame.js">
+document.form.wins.value=lw
+document.form.loss.value=ll 
+</script>
+
+
+<H1><font color="green">Loto:</h1></font>
+<form name=form>
+<font size = +1 color="Yellow">Enter different numbers between 1 and <select name="worldwide" size="1" onChange="totals=this.form.worldwide.options[this.form.worldwide.selectedIndex].value">
+          <option value="47">47
+          <option value="46">46
+          <option value="45">45
+          <option value="44">44   
+	  <option value="43">43
+          <option value="42">42
+          <option value="41">41   
+	  <option value="40">40
+          <option value="39">39
+          <option value="38">38
+          <option value="37">37
+	  <option value="36">36
+          <option value="35">35
+          <option value="34">34
+          <option value="33">33   
+	  <option value="32">32
+          <option value="31">31
+          <option value="30">30
+          <option value="29">29    
+	  <option value="28">28
+          <option value="27">27
+          <option value="26">26
+          <option value="25">25   
+	  <option value="24">24
+          <option value="23">23
+          <option value="22">22
+          <option value="21">21    
+	  <option value="20">20
+          <option value="19">19
+          <option value="18">18
+          <option value="17">17
+	  <option value="16">16
+          <option value="15">15
+          <option value="14">14
+          <option value="13">13
+          <option value="12">12
+	  <option value="11">11
+          <option value="10">10
+          <option value="9">9
+          <option value="8">8
+	  <option value="7">7
+          </select> in numerical order:<br>
+<input type="text" size=2 name="text1">
+<input type="text" size=2 name="text2">
+<input type="text" size=2 name="text3">
+<input type="text" size=2 name="text4">
+<input type="text" size=2 name="text5">
+<input type="text" size=2 name="text6">&nbsp;<input type="button" value="Easy Pick" onClick="easypick()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size=3 name="wins">Wins&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" size=3 name="loss">Losses<br>
+<input type="text" size=2 name="text7">
+<input type="text" size=2 name="text8">
+<input type="text" size=2 name="text9">
+<input type="text" size=2 name="text10">
+<input type="text" size=2 name="text11">
+<input type="text" size=2 name="text12">
+<input type="button" value="Let's Play " onClick="lotto()"><br>
+</form>
+
+
+
+<font color="orange"><h1>Craps</h1></font>
+<script src="crapsgame.js">
+document.craps.wins.value = cw
+document.craps.loss.value = cl
+</script>
+
+<form name=craps><font color="yellow" size=+1>
+Die 1: <img name=dice1 src="images/blankdie.gif">
+Die 2: <img name=dice2 src="images/blankdie.gif">
+<input type=button name=roll value="Roll First" onClick="rolldice()">
+This total: <input type=text size=1 name=totaldice>
+You need: <input type=text size=1 name=neededtotal>
+<BR>
+<input type=text size=3 name=wins> Wins&nbsp;&nbsp;&nbsp;
+<input type=text size=3 name=loss> Losses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=button value="Rules" onClick="alert('Craps works like this: On the first roll if you get a total of 7 or 11 you win.  If you get a total of 2, 3, or 12 on your first roll you lose.  If you get any other number on your first roll you need to roll that number again before you roll a 7 or 11.  If you roll a 7 or 11 you lose.')">
+</form>
+
+
+
+
+
+<font color="Blue"><H1>Rock, Paper, Scissors</H1></font>
+<font color="yellow" size=+1>
+<form name=rps>
+<input type=Button onclick="rpsgame(1)" value="Rock">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=Button onclick="rpsgame(2)" value="Paper">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=Button onclick="rpsgame(3)" value="Scissors">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Reasoning: <select name="onoff" size="1" onChange="onoffc=this.form.onoff.options[this.form.onoff.selectedIndex].value">
+<option value=0>On
+<option value=1>Off
+</select>
+<BR>
+<input type=text size=3 name=draw> Draws&nbsp;&nbsp;&nbsp;
+<input type=text size=3 name=wins> Wins&nbsp;&nbsp;&nbsp;
+<input type=text size=3 name=loss> Losses
+</form>
+</font>
+<script src="rpsgame.js">
+</script>
+
+
+
+<script src="buttongame.js">
+</script>
+
+<form name="kya_yaar"><div onmouseover="go_diff()" id="floatLyr" style="position:absolute;visibility:visible;top:40;left:40">
+<table width="100" border="1" bordercolor="ffffff" cellspacing="0" cellpadding="5" bgcolor="ffffff">
+<tr><td align="center" valign="middle">
+<input name="haha" onclick="yeah()" type="Button" value="Click Me for 100 Wins!" style="font-family:ms sans serif;font-size:9pt" onkeypress="give()"></td></tr>
+</table>
+</div>
+</form>
+
+<font color="Purple"><h1>Treasure Hunt</h1></font>
+
+<script src="treasuregame.js">
+treasurestart()
+</script>
+
+<center>
+<form>
+
+
+<p>
+<input type="radio" Name="button1" onclick="checktreasure(1)">
+<input type="radio" Name="button2" onclick="checktreasure(2)">
+<input type="radio" Name="button3" onclick="checktreasure(3)">
+<input type="radio" Name="button4" onclick="checktreasure(4)">
+<input type="radio" Name="button5" onclick="checktreasure(5)">
+<input type="radio" Name="button6" onclick="checktreasure(6)">
+</p>
+<p>
+<input type="radio" name="button7" onclick="checktreasure(7)">
+<input type="radio" name="button8" onclick="checktreasure(8)">
+<input type="radio" name="button9" onclick="checktreasure(9)">
+<input type="radio" name="button10" onclick="checktreasure(10)">
+<input type="radio" name="button11" onclick="checktreasure(11)">
+<input type="radio" name="button12" onclick="checktreasure(12)">
+</p>
+<p>
+<input type="radio" name="button13" onclick="checktreasure(13)">
+<input type="radio" name="button14" onclick="checktreasure(14)">
+<input type="radio" name="button15" onclick="checktreasure(15)">
+<input type="radio" name="button16" onclick="checktreasure(16)">
+<input type="radio" name="button17" onclick="checktreasure(17)">
+<input type="radio" name="button18" onclick="checktreasure(18)">
+</p>
+<p>
+<input type="radio" name="button19" onclick="checktreasure(19)">
+<input type="radio" name="button20" onclick="checktreasure(20)">
+<input type="radio" name="button21" onclick="checktreasure(21)">
+<input type="radio" name="button22" onclick="checktreasure(22)">
+<input type="radio" name="button23" onclick="checktreasure(23)">
+<input type="radio" name="button24" onclick="checktreasure(24)">
+</p>
+<P>
+<input type="radio" name="button25" onclick="checktreasure(25)">
+<input type="radio" name="button26" onclick="checktreasure(26)">
+<input type="radio" name="button27" onclick="checktreasure(27)">
+<input type="radio" name="button28" onclick="checktreasure(28)">
+<input type="radio" name="button29" onclick="checktreasure(29)">
+<input type="radio" name="button30" onclick="checktreasure(30)"></p>
+<BR>
+<input type="reset" value="Play Again!" onClick="treasurestart()">&nbsp;
+<BR>
+</form>
+<form name=treasure>
+<font color="Yellow" size=+1><input size=3 type="text" name="wins" value="0"> Wins&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="loss" size=3 value="0"> Losses
+</font>
+</form>
+</center>
+
+<HR>
+<H1><font color="Orange">OVER ALL:</FONT></H1>
+<br>
+
+<script>
+function calculate() {
+document.overall.wins.value = (gw + tw + lw + cw + rpsw + bw)
+document.overall.loss.value = (gl + ll + tl + cl + rpsl)
+document.overall.percent.value = (Math.round(((gw + tw + lw + bw + cw + rpsw)/(gw + tw + tl + bw + rpsw + rpsl + cw + cl+ lw + ll + gl)) * 10000))/100
+}
+</script>
+<form name=overall>
+
+<input type=button value="Calculate" onclick="calculate()">
+<input type=text size=4 name=wins value=""><font color="yellow" size=+1>Total Wins&nbsp;
+<input type=text size=4 name=loss value="">Total Losses&nbsp;
+<input type=text size=4 name=percent value="">% Overall
+</form>
+
+
+</BODY>
+</HTML>

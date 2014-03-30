@@ -1,0 +1,17 @@
+
+A:link {TEXT-DECORATION: underline;COLOR: #898787}
+A:active {COLOR: #0080C0}
+A:visited {COLOR: #4B4B4B}
+A:hover { COLOR: White;cursor:crosshair}
+
+
+
+body{
+scrollbar-face-color:#000000;
+scrollbar-shadow-color: #000000;
+scrollbar-highlight-color:#000000;
+scrollbar-3dlight-color: #C0C0C0;
+scrollbar-darkshadow-color: #C0C0C0;
+scrollbar-track-color:#000000;
+scrollbar-arrow-color:C0C0C0;
+}
